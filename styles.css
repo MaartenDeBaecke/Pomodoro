@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=DM+Mono:wght@300&display=swap');
+
+
+body{
+  margin-top: 15vh;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+
+header{
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+}
+
+.status{
+  font-size: 3.4rem;
+}
+
+
+
+content{
+  text-align: center;
+  font-family: 'Arimo', sans-serif;
+
+}
+
+.clock{
+  width: 25rem;
+  height: auto;
+  margin: auto;
+
+  font-size: 6rem;
+}
+
+#button{
+  font-family: 'Arimo', sans-serif;
+  border: none;
+  background-color: rgba(0,0,0,0);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+#button:after {
+  content: "";
+  display: block;
+  width: 0%;
+  margin: 0;
+  border-bottom: 2px solid black;
+  animation: no-border 0.2s 1;
+  animation-timing-function: ease-out;
+}
+
+#button:active, #button:focus{
+  outline: none;
+}
+
+#button:hover{
+  border-bottom: solid 2px black;
+  border-width: 0;
+}
+
+#button:hover:after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 0;
+    border-bottom: 2px solid black;
+    animation: border-slide 0.2s 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes border-slide{
+  0% {
+    width: 0%; /* Change this to whatever width you want. */
+  } 100% {
+    width: 100%; /* Change this to whatever width you want. */
+  }
+}
+
+@keyframes no-border{
+  0% {
+    width: 100%; /* Change this to whatever width you want. */
+    margin: 0;
+  } 100% {
+    width: 0%; /* Change this to whatever width you want. */
+    margin: 0 100%;
+  }
+}
+
+.settings{
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+}
+
+#settings{
+  border: none;
+  background-color: rgba(0,0,0,0);
+  color: rgba(0,0,0,1)
+}
+
+#settings:focus, #settings:active{
+  outline: none;
+}
+
+#settings:hover{
+  color: rgba(0,0,0,0.6);
+}
+
+#settings:active{
+  color: rgba(0,0,0,0.5);
+}
+
+.popUp{
+  width: 40vw;
+  max-width: 50rem;
+  height: 60vh;
+  background-color: white;
+  position: fixed;
+  top: 15vh;
+  left: 30vw;
+  padding: 25px;
+  box-shadow: 3px 3px 8px 0px #2C2C2C;
+}
+
+.minInput, .secInput, .ui{
+  width: 40px;
+  border-style: none none solid none;
+  border-width: 2px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.minInput:focus, .secInput:focus, .ui:focus{
+  outline: none;
+}
+
+.ui{
+  width: 100px;
+}
+
+.label1{
+  margin-top: 2rem;
+}
+
+.label{
+  font-size: 1.4rem;
+}
+
+.close{
+  display: block;
+  width: 160px;
+  height: 30px;
+  margin: 4rem auto;
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: 'Arimo', sans-serif;
+}
+
+.close:focus{
+  outline: none;
+}
+
+.close:hover{
+  box-shadow: 1px 1px 5px 0px #2C2C2C;
+}
+
+.close:active{
+  box-shadow: 2px 2px 7px 0px #1c1c1c;
+}
+
+.invisible{
+  visibility: hidden;
+}
+
+footer{
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+  margin: 10rem -15px 0 0;
+  padding: 0;
+}

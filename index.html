@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="status" class="status">Study</h1>
+    </header>
+    <content>
+      <div class="clock">
+        <span id="min">25</span>
+        <span>:</span>
+        <span id="sec">00</span>
+      </div>
+      <div class="buttons">
+        <button id="button" onClick="pause()">Start</button>
+      </div>
+      <div class="settings">
+        <button id="settings" onClick="popUp()"><i class="fas fa-sliders-h fa-2x"></i></button>
+      </div>
+      <div class="popUp invisible" id="popUp">
+        <p class="label label1">
+          Time study session:
+        </p>
+        <input class="minInput" type="text" id="minInputS" name="minInputS" value="25">
+        <input class="secInput" type="text" id="secInputS" name="secInputS" value="00">
+        <p class="label">
+          Time break session:
+        </p>
+        <input class="minInput" type="text" id="minInputB" name="minInputB" value="05">
+        <input class="secInput" type="text" id="secInputB" name="secInputB" value="00" />
+        <p class="label">
+          Sound effect:
+        </p>
+        <select id="sounds" class="ui search dropdown">
+          <option value="1">Ding</option>
+          <option value="2">Doorbell</option>
+          <option value="3">Harp</option>
+          <option value="4">Bamboo</option>
+        </select>
+        <button class="close" onClick="closeP()">Save Changes</button>
+      </div>
+      </div>
+    </content>
+    <footer>
+      <p>
+        pomodoro
+      </p>
+    </footer>
+  </body>
+</html>

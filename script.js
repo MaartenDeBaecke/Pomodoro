@@ -92,8 +92,7 @@ function closeP(){
 function countdown(m, s, status){
   int = setInterval(function(){
     if(document.getElementById("pause") === null){
-      document.getElementById("min").innerHTML = ('0' + m.toString()).slice(-2);
-      document.getElementById("sec").innerHTML = ('0' + s.toString()).slice(-2);
+
 
       if (s !== 0){
         s--;
@@ -107,6 +106,8 @@ function countdown(m, s, status){
         let soundValue = sound.value;
         notification(soundValue.toString());
       }
+      document.getElementById("min").innerHTML = ('0' + m.toString()).slice(-2);
+      document.getElementById("sec").innerHTML = ('0' + s.toString()).slice(-2);
     } else {
 
     }

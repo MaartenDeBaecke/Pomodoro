@@ -194,3 +194,149 @@ content{
 .invisible{
   visibility: hidden;
 }
+
+@media (pointer:none), (pointer:coarse) {
+  body{
+    margin-top: 18vh;
+  }
+
+  .status{
+    font-size: 8rem;
+  }
+
+  .clock{
+    width: 50rem;
+    font-size: 12rem;
+  }
+
+  #button{
+    font-family: 'Arimo', sans-serif;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    font-size: 4rem;
+    margin-top: 7rem;
+  }
+
+  #button:after {
+    border: none;
+  }
+
+  #button:active, #button:focus{
+    outline: none;
+  }
+
+  #button:hover{
+    border: none;
+  }
+
+  #button:hover:after {
+    border: none;
+  }
+
+  .settings{
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
+  }
+
+  #settings{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: rgba(0,0,0,1);
+    font-size: 40px !important;
+  }
+
+  #settings:focus, #settings:active{
+    outline: none;
+  }
+
+  #settings:hover{
+    color: rgba(0,0,0,0.6);
+  }
+
+  #settings:active{
+    color: rgba(0,0,0,0.5);
+  }
+
+  .popUp{
+    width: 80vw;
+    height: 60vh;
+    background-color: white;
+    position: fixed;
+    top: 15vh;
+    left: 10vw;
+    padding: 25px;
+    box-shadow: 3px 3px 8px 0px #2C2C2C;
+  }
+
+  .exit-containter{
+    padding: 25px;
+  }
+
+  .exit{
+    font-size: 40px !important;
+  }
+  .exit:hover{
+    color: rgba(0,0,0,1);
+  }
+
+  .exit:active{
+    color: rgba(0,0,0,1);
+  }
+
+  .minInput, .secInput, .ui{
+    width: 200px;
+    margin: 0 20px;
+    border-width: 5px;
+    font-size: 4rem;
+  }
+
+  .ui{
+    width: 300px;
+    font-size: 3.5rem;
+  }
+
+  option{
+    max-width: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .label{
+    margin-top: 3rem;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .label1{
+    margin-top: 4rem;
+  }
+
+  option{
+    min-height: 0.2rem;
+  }
+
+
+  .close{
+    width: 480px;
+    height: 100px;
+    margin: 7rem auto;
+    font-size: 3rem;
+  }
+
+  .close:focus{
+    outline: none;
+  }
+
+  .close:hover{
+    box-shadow: 1px 1px 5px 0px #2C2C2C;
+  }
+
+  .close:active{
+    box-shadow: 2px 2px 7px 0px #1c1c1c;
+  }
+
+  .invisible{
+    visibility: hidden;
+  }
+
+}

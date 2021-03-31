@@ -2,7 +2,7 @@
 
 
 body{
-  margin-top: 15vh;
+  margin-top: 25vh;
   overflow-x: hidden;
   background-color: white;
 }
@@ -22,7 +22,6 @@ header{
 content{
   text-align: center;
   font-family: 'Arimo', sans-serif;
-
 }
 
 .clock{
@@ -124,6 +123,27 @@ content{
   box-shadow: 3px 3px 8px 0px #2C2C2C;
 }
 
+.exit-containter{
+  text-align: right !important;
+}
+
+.exit{
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
+.exit:focus{
+  outline: none;
+}
+
+.exit:hover{
+  color: rgba(0,0,0,0.8);
+}
+
+.exit:active{
+  color: rgba(0,0,0,0.6);
+}
+
 .minInput, .secInput, .ui{
   width: 40px;
   border-style: none none solid none;
@@ -173,11 +193,4 @@ content{
 
 .invisible{
   visibility: hidden;
-}
-
-footer{
-  font-family: 'Arimo', sans-serif;
-  text-align: center;
-  margin: 10rem -15px 0 0;
-  padding: 0;
 }

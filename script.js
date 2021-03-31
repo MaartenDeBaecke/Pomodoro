@@ -88,6 +88,10 @@ function closeP(){
   study(minutesS, secondsS);
 }
 
+function exit(){
+  document.getElementById("popUp").classList.add("invisible");
+}
+
 
 function countdown(m, s, status){
   int = setInterval(function(){
